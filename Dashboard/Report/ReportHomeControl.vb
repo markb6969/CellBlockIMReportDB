@@ -22,23 +22,21 @@ Public Class ReportHomeControl
 
         Try
             Select Case selectedReport
-                Case "PDL Population Report"
+                Case "PDL Population Summary Report"
                     savePath = GeneratePdfForPDLPopulationReport() ' Assign the return value to savePath
-                Case "Criminal Case Report"
+                Case "Criminal Case Summary Report"
                     savePath = GenerateCriminalCasePdf()
-                Case "Medical Report"
+                Case "Medical Summary Report"
                     savePath = GenerateMedicalReportPdf()
                 Case "PDL Release Report"
                     savePath = GeneratePDLReleaseReport()
-                Case "Staff Population Report"
+                Case "Staff Population Summary Report"
                     savePath = GenerateStaffPopulationReport()
                 Case "Recent Crimes"
                     Dim startDate As DateTime = dtStartDate.Value
                     Dim endDate As DateTime = dtEndDate.Value
                     savePath = GenerateRecentCrimesReport(startDate, endDate)
-
-
-                Case "Incident Crime Report"
+                Case "Incident Crime Summary Report"
                     savePath = GenerateIncidentReport()
                 Case Else
                     ' Default to text format for other reports
@@ -60,18 +58,18 @@ Public Class ReportHomeControl
 
     Private Function GetReportContent(reportType As String) As String
         Select Case reportType
-            Case "PDL Population Report"
+            Case "PDL Population Summary Report"
                 Return GeneratePdfForPDLPopulationReport() ' This function should return a file path or report content
-            Case "Criminal Case Report"
+            Case "Criminal Case Summary Report"
                 Dim dt1 As DataTable = modDB.GetTableData("criminal_case")
                 Return GenerateCriminalCaseReport(dt1)
-            Case "Medical Report"
+            Case "Medical Summary Report"
                 Return GenerateMedicalReport()
             Case "PDL Release Report"
                 Return GeneratePDLReleaseReport()
-            Case "Staff Population Report"
+            Case "Staff Population Summary Report"
                 Return GenerateStaffPopulationReport()
-            Case "Incident Crime Report"
+            Case "Incident Crime Summary Report"
                 Return GenerateIncidentReport()
             Case "Recent Crimes"
                 Return GenerateRecentCrimesReport(dtStartDate.Value, dtEndDate.Value)

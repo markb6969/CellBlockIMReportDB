@@ -181,7 +181,7 @@ Partial Class ReportHomeControl
         Me.cmbReports.Font = New System.Drawing.Font("Poppins", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbReports.ForeColor = System.Drawing.Color.Black
         Me.cmbReports.FormattingEnabled = True
-        Me.cmbReports.Items.AddRange(New Object() {"PDL Population Report", "Staff Population Report", "Incident Crime Report", "Criminal Case Report", "Recent Crimes", "Medical Report", "PDL Release Report"})
+        Me.cmbReports.Items.AddRange(New Object() {"PDL Population Summary Report", "Staff Population Summary Report", "Incident Crime Summary Report", "Criminal Case Summary Report", "Medical Summary Report", "Recent Crimes", "PDL Release Report"})
         Me.cmbReports.Location = New System.Drawing.Point(3, 4)
         Me.cmbReports.Name = "cmbReports"
         Me.cmbReports.Size = New System.Drawing.Size(318, 34)
