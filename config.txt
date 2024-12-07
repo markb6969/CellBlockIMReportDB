@@ -1,0 +1,4 @@
+﻿server=''
+uid=''
+password=''
+database=''
