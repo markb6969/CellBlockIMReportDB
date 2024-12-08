@@ -29,25 +29,25 @@ Partial Class InmateReportControls
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.dtEndDate = New System.Windows.Forms.DateTimePicker()
+        Me.dtStartDate = New System.Windows.Forms.DateTimePicker()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.cmbReports = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCancel
@@ -142,25 +142,25 @@ Partial Class InmateReportControls
         Me.Label4.TabIndex = 44
         Me.Label4.Text = "Report date by range"
         '
-        'DateTimePicker3
+        'dtEndDate
         '
-        Me.DateTimePicker3.CustomFormat = "MMMM, dd, yyyy"
-        Me.DateTimePicker3.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker3.Location = New System.Drawing.Point(319, 271)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(200, 27)
-        Me.DateTimePicker3.TabIndex = 43
+        Me.dtEndDate.CustomFormat = "MMMM, dd, yyyy"
+        Me.dtEndDate.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtEndDate.Location = New System.Drawing.Point(319, 271)
+        Me.dtEndDate.Name = "dtEndDate"
+        Me.dtEndDate.Size = New System.Drawing.Size(200, 27)
+        Me.dtEndDate.TabIndex = 43
         '
-        'DateTimePicker2
+        'dtStartDate
         '
-        Me.DateTimePicker2.CustomFormat = "MMMM, dd, yyyy"
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(72, 271)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 27)
-        Me.DateTimePicker2.TabIndex = 43
+        Me.dtStartDate.CustomFormat = "MMMM, dd, yyyy"
+        Me.dtStartDate.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtStartDate.Location = New System.Drawing.Point(72, 271)
+        Me.dtStartDate.Name = "dtStartDate"
+        Me.dtStartDate.Size = New System.Drawing.Size(200, 27)
+        Me.dtStartDate.TabIndex = 43
         '
         'Panel7
         '
@@ -171,20 +171,20 @@ Partial Class InmateReportControls
         Me.Panel7.Size = New System.Drawing.Size(1205, 69)
         Me.Panel7.TabIndex = 1
         '
-        'ComboBox3
+        'cmbReports
         '
-        Me.ComboBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.cmbReports.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox3.Font = New System.Drawing.Font("Poppins", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.ForeColor = System.Drawing.Color.Black
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Inmate Summary Report", "Incident Report", "Medical Report", "Cellblock Population Report", "Disciplinary Action Report", "Release and Transfer Report"})
-        Me.ComboBox3.Location = New System.Drawing.Point(3, 4)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(467, 34)
-        Me.ComboBox3.TabIndex = 31
+        Me.cmbReports.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.cmbReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbReports.Font = New System.Drawing.Font("Poppins", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbReports.ForeColor = System.Drawing.Color.Black
+        Me.cmbReports.FormattingEnabled = True
+        Me.cmbReports.Items.AddRange(New Object() {"PDL Population Summary Report", "Staff Population Summary Report", "Incident Crime Summary Report", "Criminal Case Summary Report", "Medical Summary Report", "PDL Release Summary Report", "Recent Crimes", "Recent Inmate Releases"})
+        Me.cmbReports.Location = New System.Drawing.Point(3, 4)
+        Me.cmbReports.Name = "cmbReports"
+        Me.cmbReports.Size = New System.Drawing.Size(467, 34)
+        Me.cmbReports.TabIndex = 31
         '
         'Label3
         '
@@ -213,8 +213,8 @@ Partial Class InmateReportControls
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.DateTimePicker3)
-        Me.Panel1.Controls.Add(Me.DateTimePicker2)
+        Me.Panel1.Controls.Add(Me.dtEndDate)
+        Me.Panel1.Controls.Add(Me.dtStartDate)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -224,13 +224,24 @@ Partial Class InmateReportControls
         Me.Panel1.Size = New System.Drawing.Size(682, 492)
         Me.Panel1.TabIndex = 0
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Image = Global.CellBlockIM.My.Resources.Resources.pdf_file__2_
+        Me.PictureBox1.Location = New System.Drawing.Point(611, 33)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(51, 62)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 45
+        Me.PictureBox1.TabStop = False
+        '
         'Panel2
         '
         Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.ComboBox3)
+        Me.Panel2.Controls.Add(Me.cmbReports)
         Me.Panel2.Location = New System.Drawing.Point(72, 137)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(478, 44)
@@ -271,17 +282,6 @@ Partial Class InmateReportControls
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1211, 579)
         Me.TableLayoutPanel1.TabIndex = 42
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Image = Global.CellBlockIM.My.Resources.Resources.pdf_file__2_
-        Me.PictureBox1.Location = New System.Drawing.Point(611, 33)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(51, 62)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 45
-        Me.PictureBox1.TabStop = False
-        '
         'InmateReportControls
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -296,10 +296,10 @@ Partial Class InmateReportControls
         Me.Panel7.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -311,10 +311,10 @@ Partial Class InmateReportControls
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents DateTimePicker3 As DateTimePicker
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents dtEndDate As DateTimePicker
+    Friend WithEvents dtStartDate As DateTimePicker
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents cmbReports As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel1 As Panel
