@@ -1113,7 +1113,6 @@
     <None Include="Resources\SuperAd.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\cellblock-central %281%29.png" />
     <Content Include="config.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
